@@ -15,24 +15,50 @@
     </div>
 
     <div class="dropdown-menu">
-
+        
         <span class="material-symbols-outlined dropdownBtn">menu</span>
+        
 
-        <!--<div class="menu-content">
+        <div class="menu-content">
             <li><a href="#OmOss">Om Oss</a></li>
             <li><a href="#Produkter">Produkter</a></li>
             <li><a href="#TaKontakt">Ta Kontakt</a></li>
-        </div>-->
+        </div>
         
     </div>
 
     <div class="content">
-
-        <h1>Velkommen til <br>Media O'Right </h1>
+        <br><br>
+        <h1>Velkommen til Media O'Right</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi
+            nihil sed modi nam
+            dolorum autem ea odio quod, exercitationem voluptatum quae d
+            gnissimos? Dicta expedita illo 
+            aliquam. Nostrum, aperiam. Quam, explicabo.
+        </p>
 
     </div>
 
 
-    <script src="script.js"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+
+            var dropdownBtn = document.querySelector(".dropdown-menu .dropdownBtn");
+            var dropdownMenu = document.querySelector(".dropdown-menu .menu-content");
+            dropdownBtn.addEventListener("click", function() {
+                dropdownMenu.classList.toggle("active");
+                
+
+            })
+
+
+        })
+
+
+
+    </script>
+
+
 </body>
 </html>

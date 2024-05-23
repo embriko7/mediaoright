@@ -1,6 +1,7 @@
 *{
     padding:0;
     margin:0;
+    user-select:none;
 }
 
 .header{
@@ -15,17 +16,34 @@
 
 .header img{
     width:60%;
+    max-width:500px;
 }
-
 
 .dropdown-menu .dropdownBtn{
-    margin:25px;
-    height:25px;
     width:25px;
-    font-weight:500;
+    height:25px;
+    margin:20px;
 }
+
+.dropdown-menu .menu-content{
+    display:hidden;
+}
+
+.dropdown-menu .menu-content.active{
+    display:block;
+}
+
+
+
+
+
+
+
+
+
 
 .content{
     display:flex;
+    flex-direction:column;
     justify-content:center;
 }
